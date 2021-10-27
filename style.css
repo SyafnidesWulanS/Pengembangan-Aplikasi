@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+}
+
+li,
+a,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pofloater;
+  order: 3;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  order: 1;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  order: 2;
+}
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pofloater;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+.slideshow {
+  margin: 0 auto;
+  padding-top: 150px;
+  height: 700px;
+  perspective: 1000px;
+}
+.content {
+  margin: auto;
+  width: 150px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+  transform-style: preserve-3d;
+}
+.slider-content {
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotate 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.slider-content:hover {
+  cursor: pofloater;
+  animation-play-state: paused;
+}
+.slider-content figure {
+  width: 180px;
+  height: 120px;
+  border: 1px solid #555;
+  overflow: hidden;
+  position: absolute;
+}
+.slider-content figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(350px);
+}
+.slider-content figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(350px);
+}
+
+.slider-content figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(350px);
+}
+.slider-content figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(350px);
+}
+.slider-content figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(350px);
+}
+.slider-content figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(350px);
+}
+.slider-content figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(350px);
+}
+.slider-content figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(350px);
+}
+.slider-content figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(350px);
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 0px #000;
+}
+.slider-content img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+.slider-content img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.ScriptTop {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  font-size: 0.69em;
+  font-weight: 600;
+  line-height: 2.2;
+  padding: 12px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.ScriptTop ul {
+  margin: 24px 0;
+  padding: 0;
+  text-align: left;
+}
+.ScriptTop li {
+  list-style: none;
+  display: inline-block;
+}
+.ScriptTop li a {
+  background: #6a4aed none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.ScriptTop li a:hover {
+  background: #000;
+  color: #fff;
+}
+.ScriptHeader {
+  float: left;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.rt-heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.Scriptcontent {
+  line-height: 28px;
+}
+.ScriptHeader h1 {
+  font-family: 'brandon-grotesque', 'Brandon Grotesque', 'Source Sans Pro',
+    'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue',
+    Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #6a4aed;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+}
+.ScriptHeader h2 {
+  color: #312c8f;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 0;
+  line-height: normal;
+}
+.ScriptHeader h1 span {
+  display: block;
+  padding: 0;
+  font-size: 22px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.ScriptHeader span {
+  display: block;
+  padding: 0;
+  font-size: 22px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.rt-container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
